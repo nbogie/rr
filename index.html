@@ -44,6 +44,7 @@
 </head>
 <body>
 <p>Rotate device to see different views</p>
+<button class="button" onclick="reload()">Reload</button>
 <div class="ipad">iPad</div>
 <div class="iphone">iPhone</div>
 <div class="iphone4">iPhone4</div>
@@ -76,5 +77,20 @@
 </div>
 
 
-</body>
+<script type="text/javascript">
+  function reload() {
+        window.location.reload();
+    }
+    // example of how to use applicationCache
+    var cache = window.applicationCache;
+    cache.addEventListener('updateready', function(e) {
+        if (cache.status == window.cache.UPDATEREADY) {
+            cache.swapCache();
+            if (confirm('load new version into cache?')) {
+                reload();
+            }
+        }
+    });
+
+</script></body>
 </html>
