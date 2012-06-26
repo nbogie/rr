@@ -11,6 +11,9 @@ $(document).ready(function() {
 
   $('#suggestbtn').click(function() { generateMove(); } );
   $('#movelisthdr').click(function() { $('#movelist').toggle(); } );
+  window.setInterval(function() {
+    generateMove();
+  }, 1000);
 
   generateMove();
 });

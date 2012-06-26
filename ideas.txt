@@ -1,0 +1,3 @@
+Just cycle automatically through all moves in the list (say 1 per second).   On an ipad screen in big font the caller may be able to look over and see it.
+
+Announce with audio, but only when triggered.
