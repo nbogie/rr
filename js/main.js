@@ -57,7 +57,7 @@ $(document).ready(function() {
   $('#parseMovesBtn').click(function() { populateMovesFromTextBox(); } );
 
   //showAll();
-  rotate();
+  //rotate();
   populateMovesFromTextBox();
   generateMove();
 });
