@@ -1,10 +1,18 @@
+Announce with audio, a single move.
+
+add some prebuilt lists:
+norwegian rueda standard: lvl1, lvl2, lvl1+2...
+
+filter for move length?
+
+buttons for "2" "4" "6" bars length, will suggest a random move of that length.
+
+allow switching between move lists
+
+add list memory (local storage).  Why?  They can just store in a text note in another app.
+
+display whether move is 2 bar, 4 bar, etc.
+
+DONE:
 Just cycle automatically through all moves in the list (say 1 per second).   On an ipad screen in big font the caller may be able to look over and see it.
 
-Announce with audio, but only when triggered.
-
-some prebuilt lists you can switch between:
-norwegian rueda standard: lvl1, lvl2, lvl1+2...
-filter for move length?
-buttons for "2" "4" "6" bars length, will suggest a random move of that length.
- 
-display whether move is 2 bar, 4 bar, etc.
