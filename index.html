@@ -1,5 +1,5 @@
 <!doctype html>
-<html manifest="rr.appcache"/>
+<html> <!--  manifest="rr.appcache"/> -->
 <head>
     <meta charset="utf-8">
     <title>Rueda Randomiser</title>
@@ -43,38 +43,171 @@
 </style>
 </head>
 <body>
-<p>Rotate device to see different views</p>
-<button class="button" onclick="reload()">Reload</button>
+<button class="button" id="reloadBtn" onclick="reload()">Reload</button>
+<button class="button" id="rotateBtn">Fake Rotate</button>
 <div class="ipad">iPad</div>
 <div class="iphone">iPhone</div>
 <div class="iphone4">iPhone4</div>
 <div class="landscape">
-<h2>Suggested move:</h2>
-<div id="movedisplay">placeholder</div>
-<button class="button" id="suggestbtn">Suggest</button>
+  <div id="movedisplay">placeholder</div>
+  <button class="button" style='display:none' id="suggestBtn">Suggest</button>
 </div>
 
 <div class="portrait">
-<h2 id="movelisthdr">All moves (would be hidden?):</h2>
-<ul id="movelist" style="display:none">
-  <li>patin</li>
-  <li>jardin</li>
-  <li>puente</li>
-  <li>dame dos</li>
-  <li>dame</li>
-  <li>enchufa</li>
-  <li>directo</li>
-  <li>dile que si</li>
-  <li>dos con cuba</li>
-  <li>la familia</li>
-  <li>33</li>
-</ul>
+  <h2 id="movelisthdr">Moves in use:</h2>
 
-<ul>
-  <li><a href="myjqm.html">My hacked up jqm page</a></li>
-  <li><a href="jqmdemo/">Real JQM demo</a></li>
-</ul>
+  <button class="button" id="parseMovesBtn">Parse Moves List</button>
+  <textarea id="movelisttextarea" rows="10" cols="20">
+la rueda!
+saca agua del pozo
+tiempo España arriba
+tiempo España abajo
+vamos abajo
+un tarro
+dile que no
+dame una
+dame dos
+dame una arraiba
+enchufla
+enchufla doble
+enchufla y quédate
+pelota una, dos, tres
+pelota hasta cinco
+la prima
+(la prima) con la hermana
+hasta la tia / la familia
+exhíbela
+paseala
+paseala por arriba
+el cero
+ni pa´ ti, ni pa´ mi
+croqueta y aspirina
+el puente
+mantecao
+enchufla y escóndete
+tobillo
+el dedo
+setenta
+setenta complicado
+sombrero
+vacílala
+montaña
+parte el brazo
+ochenta
+ochenta y quatro
+a lo cortico
+cadena
+complícate
+enchufla y al medio
+a la derecha
+a la izquiera
+la flor
+flor roja
+envuélvela
+altérnate
+el ocho
+la madre
+con una
+dos
+el flaco
+el gordo
+directo
+dame otra
+sacala
+saca la vecina
+bota(la)
+pelota moderna
+patin
+patin pa’mujeres
+amistad
+estrella
+camina(la)
+por mi, por ti
+adios
+la prima semi tia tres
+una media
+un fly
+media doble
+principe bueno / malo
+el plato
+engañala
+Echevarria
+saborea
+panqué
+yogúr
+un alarde
+enchufla con clave
+doble play
+cubanito / cubanita
+Bayamo
+Bayamo por Matanzas
+Kentucky
+balsero
+Coca-Cola
+vacílence los dos
+vacílala completa
+paseala por Bayamo
+el dos
+la prima cruzada
+por fuera - adentro
+vamos
+mujeres …
+hombres …
+festival de …
+… dos veces
+repite
+siguelo
+se fue
+mentira!
+… y arriba
+… y abajo
+… y quédate
+… con mambo
+… con alarde
+americano / americana
+mata la cucaracha
+se viró
+dile que si
+dame p’atrás
+una pa'mi / una pa'ti
+dame dos con Cuba
+enchufla y adios
+seis y nueve
+amistad complícate
+consorte
+Paulito
+toma electrica
+mujeres al centro
+mata la cucaracha
+puente doble
+la preciosa
+Juana la cubana
+arcoiris
+egoista
+enróscate
+formation: Tumba Francesa
+formation: cruzado
+structure: dos
+structure: una foto
+structure: … y dame
+structure: … con vuelta
+structure: … sin soltar
+structure: … con rumba
+rosca
+patin
+jardin
+el medico con palmas
+hombres p'al piso
+setenta a mi gusto
+</textarea>
+  <ul id="movelist"></ul>
+
+  <ul>
+    <li><a href="myjqm.html">My hacked up jqm page</a></li>
+    <li><a href="jqmdemo/">Real JQM demo</a></li>
+  </ul>
 </div>
+<p>Rotate device to change mode</p>
 
 
 <script type="text/javascript">
