@@ -1,29 +1,29 @@
-americano / americana 
-mata la cucaracha 
-se viró 
-dile que si 
-dame p’atrás 
-una pa'mi / una pa'ti 
-dame dos con Cuba 
-enchufla y adios 
-seis y nueve 
-amistad complícate 
-consorte 
+americano / americana
+mata la cucaracha
+se viró
+dile que si
+dame p’atrás
+una pa'mi / una pa'ti
+dame dos con Cuba
+enchufla y adios
+seis y nueve
+amistad complícate
+consorte
 Paulito
-toma electrica 
-mujeres al centro 
-mata la cucaracha 
-puente doble 
-la preciosa 
-Juana la cubana 
-arcoiris 
-egoista 
-enróscate 
-formation: Tumba Francesa 
-formation: cruzado 
-structure: dos 
-structure: una foto 
-structure: … y dame 
-structure: … con vuelta 
-structure: … sin soltar 
+toma electrica
+mujeres al centro
+mata la cucaracha
+puente doble
+la preciosa
+Juana la cubana
+arcoiris
+egoista
+enróscate
+formation: Tumba Francesa
+formation: cruzado
+structure: dos
+structure: una foto
+structure: … y dame
+structure: … con vuelta
+structure: … sin soltar
 structure: … con rumba
